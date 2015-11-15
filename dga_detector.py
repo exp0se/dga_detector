@@ -46,7 +46,7 @@ def main():
             domain_without_sub, domain_entropy, domain_consonants, domain_length = domain_check(args.domain)
             print("Analysing domain...")
             if domain_entropy > 3.8:
-                print("High entropy(3.8) is a strong indicator of DGA domain.\n"
+                print("High entropy(>3.8) is a strong indicator of DGA domain.\n"
                       "This domain scored: %d" % domain_entropy)
             if domain_consonants > 7:
                 print("High consonants(>7) count is an indicator of DGA domain\n"
